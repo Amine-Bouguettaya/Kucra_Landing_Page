@@ -1,0 +1,157 @@
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, rgba(139,195,245,1) 35%, rgba(18,148,184,1) 100%);
+}
+#navParent {
+    display: flex;
+    flex-direction: row;
+}
+#navTitle {
+    padding: 3vh 20vh;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+}
+nav {
+    padding: 0em 3em;
+    display: flex;
+    vertical-align: top;
+}
+.navButton {
+    margin: auto 1em;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+.navButton:hover {
+    color: rgb(229, 229, 229); 
+}
+#logoList {
+    margin: auto auto;
+    text-align: center;
+}
+#logoList > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+#logoList > a:hover {
+    color: rgb(229, 229, 229);
+}
+#bottomHeader {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+#bottomHeaderContent {
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    height: 40%;
+    font-size: 40px;
+    width: 60%;
+    text-align: left;
+    color: rgb(40, 40, 40);
+
+}
+#bottomHeaderContent > p {
+    height: 40%;
+    margin: 2em 0;
+    width: 60%;
+    text-align: left;
+    color: rgb(40, 40, 40);
+
+}
+form {
+    margin-right: 20%;
+    width: 40%;
+}
+#submitContent {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.444);
+    width: 400px;
+    padding: 0.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+input[type="text"] {
+    background-color: transparent;
+    width: 70%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+#submitButton {
+    background-color: #2596be;
+    color: white;
+    border: none;
+    font-size: medium;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 30%;
+    text-decoration: none;
+}
+#submitButton:hover {
+    background-color: #68b4d4;
+}
+#figureIllu {
+    width: 50%;
+}
+.illustration {
+    width: 100%;
+}
+.productSection {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.productSection > h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.productSection > p {
+    color: #bcbcbc;
+    margin-bottom: 3em;
+}
+#cardContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    margin: 1em;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background: radial-gradient(circle, rgba(139,195,245,1) 35%, rgba(18,148,184,1) 100%);
+    border-radius: 10px;
+
+}
