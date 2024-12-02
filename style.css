@@ -176,3 +176,281 @@ input[type="text"]:focus {
     opacity: 0.9;
     padding-bottom: 1em;
 }
+.workSection {
+    min-height: 100vh;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.workSection > h2 {
+    margin-top: 10vh;
+    font-size: 24px;
+    margin-bottom: 2em;
+}
+.workSection > p {
+    color: #787878;
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+    padding-bottom: 1em;
+}
+.teamSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+}
+.teamSection > h2 {
+    margin-top: 3em;
+    font-size: 32px;
+    padding-bottom: 16px;
+    color: #333;
+}
+.teamSection > p {
+    color: #777;
+    margin-bottom: 5em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.spanNb {
+    font-size: 28px;
+}
+.spanText {
+    color: #9d9d9d;
+    padding-bottom: 3em;
+}
+.teamCardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20vh;
+}
+.cardTitle {
+    display: flex;
+    flex-direction: column;
+}
+.teamCard {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 25%;
+    padding: 0;
+}
+.person1Container {
+    position: relative;
+    border-radius: 200px;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+}
+.person1Img {
+    display: block;
+    border-radius: 200px;
+    filter: grayscale(100%);
+    width: 100%;
+    transition: transform 0.4s ease;
+    transform-origin: 50% 50%;
+}
+.person1Container:hover .person1Img{
+    transform: scale(1.2);
+    width: 100%;
+    filter: none;
+}
+.person1Container:hover .overlay {
+    opacity: 1;
+    top: 4em;
+    bottom: 0;
+    left: 2em;
+    right: 0;
+  }
+.overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 1em;
+    bottom: 0;
+    left: 1em;
+    right: 0;
+    height: 15%;
+    width: 15%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+.icon {
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 5px 0;
+    background-color: white;
+}
+.figTitle {
+    padding-top: 3em;
+    font-size: 20px;
+}
+.figText {
+    color: #777;
+}
+.paralaxSection {
+    background-image: url(./img/parallax.png);
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.paralaxSectionContent {
+    text-align: center;
+    padding: 1em;
+    text-shadow: rgb(0, 0, 0) 2px 2px 20px;
+}
+.paralaxSectionContent > h2 {
+    margin-top: 3em;
+    font-size: 32px;
+    padding: 16px 0;
+    color: white;
+}
+.paralaxSectionContent > p {
+    color: white;
+}
+.getStartedButton {
+    margin-top: 2em;
+	border-radius:13px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    text-decoration:none;
+    font-size:17px;
+	padding:16px 32px;
+    transition: 0.3s;
+    background-color: rgba(146, 146, 146, 0.385);
+}
+.getStartedButton:hover {
+    background-color: rgba(146, 146, 146, 0.6);
+}
+.clientSection {
+    min-height: 100vh;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.clientSection > h2 {
+    margin-top: 3em;
+    font-size: 32px;
+    padding: 16px 0;
+}
+.clientSection > p {
+    color: gray;
+    padding-bottom: 6em;
+}
+.imgContainer {
+    padding-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.clientImage {
+    margin: 2em;
+    filter: contrast(0);
+    width: 7%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.clientImage:hover {
+    filter: contrast(1);
+}
+.creativeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.creativeContainer {
+    padding: 5em;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.creativeContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.creativeContent > h3 {
+    font-size: 28px;
+}
+.creativeContent > p {
+    padding: 4em 0;
+    color: gray;
+}
+.statsContainer {
+    display: flex;
+    flex-direction: row;
+}
+.statsContent {
+    padding-right:4em;
+    display: flex;
+    flex-direction: column;
+}
+.statsContent > .nb {
+    font-size: 32px;
+}
+.statsContent > .text {
+    color: gray;
+}
+.learnButton {
+    margin-top: 4em;
+    cursor: pointer;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #608cfc;
+    text-decoration: none;
+    width: 150px;
+}
+.creativeImgContainer {
+    justify-content: center;
+    width: 50%;
+}
+.creativeImg {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+.pricingSection {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.titleContent > h2 {
+    font-size: 36px;
+    padding-top: 2em;
+}
+.titleContent > p {
+    color: gray;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+.priceCardContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.priceCard {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
