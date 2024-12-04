@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+html {
+    scroll-behavior: smooth;
 }
 header {
     min-height: 100vh;
@@ -125,18 +129,18 @@ input[type="text"]:focus {
 .illustration {
     width: 100%;
 }
-.productSection {
+#productSection {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
 }
-.productSection > h2 {
+#productSection > h2 {
     font-size: 32px;
     padding-bottom: 16px;
     color: #333;
 }
-.productSection > p {
+#productSection > p {
     color: #777;
     margin-bottom: 48px;
     max-width: 600px;
@@ -161,6 +165,12 @@ input[type="text"]:focus {
     background: radial-gradient(circle, rgba(139,195,245,1) 35%, rgba(18,148,184,1) 100%);
     border-radius: 16px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    bottom: 0;
+}
+.card:hover {
+    position: relative;
+    bottom: 15px;
 }
 .card > i {
     font-size: 48px;
@@ -194,6 +204,43 @@ input[type="text"]:focus {
     line-height: 1.6;
     opacity: 0.9;
     padding-bottom: 1em;
+}
+#carrousel {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.slides {
+    display: none;
+}
+#leftArrow, #rightArrow {
+    position: absolute;
+    margin: auto;
+    font-size: 24px;
+    cursor: pointer;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #222024;
+    transition: 0.6s ease;
+    display: flex;
+}
+#rightArrow {
+    right: 0;
+}
+.fa-arrow-left, .fa-arrow-right {
+    margin: auto;
+    color: white;
+    font-size: 24px;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
 }
 .teamSection {
     display: flex;
@@ -338,19 +385,19 @@ input[type="text"]:focus {
 .getStartedButton:hover {
     background-color: rgba(146, 146, 146, 0.6);
 }
-.clientSection {
+#clientSection {
     min-height: 100vh;
     background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.clientSection > h2 {
+#clientSection > h2 {
     margin-top: 3em;
     font-size: 32px;
     padding: 16px 0;
 }
-.clientSection > p {
+#clientSection > p {
     color: gray;
     padding-bottom: 6em;
 }
@@ -428,7 +475,7 @@ input[type="text"]:focus {
     margin: 0 auto;
     width: 80%;
 }
-.pricingSection {
+#pricingSection {
     min-height: 100vh;
     background-color: #f3f3f3;
     display: flex;
@@ -449,19 +496,34 @@ input[type="text"]:focus {
     display: flex;
     flex-direction: row;
 }
-
 .priceCard {
     background: white;
     border-radius: 16px;
-    padding: 2rem 5em;
     margin: 4em 1em;
-    width: 100%;
-    max-width: 400px;
+    width: 350px;
+    height: 500px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.titleContainer {
+    position: relative;
+    right: 0;
+    width: 100%;
+}
+.titleContainer > span{
+    padding: 0.5em;
+    color: white;
+    border-radius: 0 10px;
+    background-color: #608cfc;
+    position: absolute;
+    right: 0;
 }
 .priceCard > span > span {
     font-size: 36px;
     color: #608cfc;
+}
+.priceCard > .titleContainer > h4 {
+    padding: 1em 0;
+    font-weight: bold;
 }
 .priceCard > h4 {
     padding: 1em 0;
@@ -472,17 +534,177 @@ input[type="text"]:focus {
     list-style: none;
 }
 .itemList {
+    padding: 1em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem 0;
     color: #333;
+}
+.fa-circle-check{
+    color: rgb(0, 208, 0);
+}
+.fa-circle-xmark {
+    color: red;
 }
 .itemName {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-.itemValue {
-    color: #666;
+.joinButton {
+    cursor: pointer;
+    color: #608cfc;
+    padding: 10px 70px;
+    border-radius: 10px;
+	border:1px solid #608cfc;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.2s;
 }
+.joinButton:hover {
+    color: white;
+    background-color: #608cfc;
+}
+
+.promoButton {
+    margin-bottom: 2em;
+    cursor: pointer;
+    color: white;
+    padding: 10px 70px;
+    border-radius: 10px;
+    background-color: #608cfc;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.2s;
+}
+.promoButton:hover {
+    color: #608cfc;
+    background-color: white;
+	border:1px solid #608cfc;
+}
+#blogSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+}
+#blogSection > h2 {
+    margin-top: 3em;
+    font-size: 32px;
+    padding: 16px 0;
+}
+#blogSection > p {
+    color: gray;
+    padding-bottom: 6em;
+}
+.blogContainer {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.blogCard {
+    margin: 2em;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.blogCard > article {
+    width: 90%;
+    text-align: left;
+}
+.blogCard > article > h4 {
+    padding: 1em 0;
+}
+.blogCard > article > a {
+    color: #608cfc;
+    text-decoration: none;
+}
+.imgFigure {
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+}
+.imgFigure:hover .blogOverlay{
+    opacity: 1;
+}
+.blogOverlay {
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: absolute;
+    padding: 1em;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 98%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+.blogImg {
+    border-radius: 10px;
+    width: 100%;
+}
+footer {
+    color: #909296;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #302d32;
+    min-height: 40vh;
+}
+.footerContainer {
+    margin: auto;
+}
+.footerContainer > p {
+    padding: 1em;
+}
+.socialsContainer {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.iconContainer {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: 0 1em;
+    border-radius: 50%;
+	border:1px solid #909296;
+}
+.iconContainer > a {
+    margin: auto;
+    font-size: 24px;
+    color: #909296;
+}
+.tosContainer {
+padding: 2em;
+}
+.tosContainer > a {
+    text-decoration: none;
+    color: #909296;
+    padding: 0 2em;
+}
+.scrollButton {
+    position: fixed;
+    right: 26px;
+    bottom: 26px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #222024;
+    z-index: 9;
+    display: flex;
+    text-decoration: none;
+}
+.fa-arrow-up {
+    margin: auto;
+    color: white;
+    font-size: 24px;
+}
+

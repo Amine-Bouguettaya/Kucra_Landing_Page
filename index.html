@@ -9,17 +9,17 @@
     <title>Kucra</title>
 </head>
 <body>
-    <header>
+    <header id="scrollTop">
         <div id="navParent">
             <a href="" id="navTitle">Kucra</a>
             <nav>
                 <a href="" class="navButton">HOME</a>
-                <a href="" class="navButton">FEATURES</a>
-                <a href="" class="navButton">CLIENT</a>
-                <a href="" class="navButton">PRICING</a>
+                <a href="#productSection" class="navButton">FEATURES</a>
+                <a href="#clientSection" class="navButton">CLIENT</a>
+                <a href="#pricingSection" class="navButton">PRICING</a>
                 <a href="" class="navButton">FAQ</a>
                 <a href="" class="navButton">ABOUT</a>
-                <a href="" class="navButton">BLOG</a>
+                <a href="#blogSection" class="navButton">BLOG</a>
                 <a href="" class="navButton">CONTACT</a>
             </nav>
             <div id="logoList">
@@ -45,7 +45,7 @@
             </figure>
         </div>
     </header>
-    <section class="productSection">
+    <section id="productSection">
         <h2>Products Features</h2>
         <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
         <div id="cardContainer">
@@ -69,6 +69,20 @@
     <section class="workSection">
             <h2>How It Works ?</h2>
             <p>it is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+            <div id="carrousel">
+                    <div class="slides fade">
+                        <img src="img/team1.jpg" alt="" style="width: 50%">
+                    </div>
+                    <div class="slides fade">
+                        <img src="img/team2.jpg" alt="" style="width: 50%">
+                    </div>
+                    <div class="slides fade">
+                        <img src="img/team3.jpg" alt="" style="width: 50%">
+                    </div>
+                <a id="leftArrow" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+                <a id="rightArrow" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div></div>
     </section>
     <section class="teamSection">
         <h2>We'r dynamic team of talented people of annovative & marketing expert</h2>
@@ -163,7 +177,7 @@
             <a href="#" class="getStartedButton">Get Started</a>
         </div>
     </section>
-    <section class="clientSection">
+    <section id="clientSection">
         <h2>What your client says</h2>
         <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild question marks and devious pulvinar metus molestie set Semikoli.</p>
         <div class="imgContainer">
@@ -196,7 +210,7 @@
             </div>
         </div>
     </section>
-    <section class="pricingSection">
+    <section id="pricingSection">
         <div class="titleContent">
             <h2>Our Pricing</h2>
             <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
@@ -207,31 +221,33 @@
                     <span><span>$9</span>/month</span>
                     <ul class="list">
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Bandwith</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Bandwith</span>
                             <span>1GB</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Online space</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Online space</span>
                             <span>500MB</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-xmark"></i>Support:No</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-xmark"></i>Support:No</span>
                             <span>No</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Domain</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Domain</span>
                             <span>1</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-xmark"></i>Hidden Fees</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-xmark"></i>Hidden Fees</span>
                             <span>No</span>
                         </li>
                     </ul>
-                    <a href="#">Join Now</a>
+                    <a href="#" class="joinButton">Join Now</a>
                 </div>
-                <div class="priceCard">
+                <div class="priceCard" style="position: relative; bottom: 20px;">
+                    <div class="titleContainer">
+                        <span>20%<br>sale</span>
+                    </div>
                     <h4>Advenced</h4>
-                    <span>20% sale</span>
                     <span><span>$19</span>/month</span>
                     <ul class="list">
                         <li class="itemList">
@@ -239,104 +255,128 @@
                             <span class="itemValue">3GB</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Online space</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Online space</span>
                             <span>2GB</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Support:No</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Support:No</span>
                             <span>Yes</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Domain</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Domain</span>
                             <span>Unlimited</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Hidden Fees</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Hidden Fees</span>
                             <span>No</span>
                         </li>
                     </ul>
-                    <a href="#">Join Now</a>
+                    <a href="#" class="promoButton">Join Now</a>
                 </div>
                 <div class="priceCard">
                     <h4>Professional</h4>
                     <span><span>$29</span>/month</span>
                     <ul class="list">
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Bandwith</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Bandwith</span>
                             <span>3GB</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Online space</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Online space</span>
                             <span>2GB</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Support:No</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Support:No</span>
                             <span>Yes</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Domain</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Domain</span>
                             <span>Unlimited</span>
                         </li>
                         <li class="itemList">
-                            <span><i class="fa-regular fa-circle-check"></i>Hidden Fees</span>
+                            <span class="itemName"><i class="fa-regular fa-circle-check"></i>Hidden Fees</span>
                             <span>No</span>
                         </li>
                     </ul>
-                    <a href="#">Join Now</a>
+                    <a href="#" class="joinButton">Join Now</a>
                 </div>
             </div>
     </section>
-    <section>
+    <section id="blogSection">
         <h2>Our Blog</h2>
         <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
-        <div>
-            <div>
-                <figure>
-                    <img src="img/blog1.png" alt="blog 1">
+        <div class="blogContainer">
+            <div class="blogCard">
+                <figure class="imgFigure">
+                    <img src="img/blog3.png" alt="blog 1" class="blogImg">
+                    <div class="blogOverlay">
+                        <span><i class="fa-regular fa-user"></i> Calvin Carlo</span>
+                        <span><i class="fa-regular fa-clock"></i> 20th March 2021</span>
+                    </div> 
                 </figure>
                     <article>
-                        <h4>>Doing a cross country road trip</h4>
+                        <h4>Doing a cross country road trip</h4>
                         <p>We craft digital, graphic and dimensiaonal thinking, to create category leading brand.</p>
                         <a href="#">Read More</a>
                     </article>
             </div>
-            <div>
-                <figure>
-                    <img src="img/blog2.png" alt="blog 2">
-                    <article>
-                        <h4>New exhibition at our Museum</h4>
-                        <p>Even the all-powerful Pointing has no control about the blind almost unorthographic.</p>
-                        <a href="#">Read More</a>
-                    </article>
+            <div class="blogCard">
+                <figure class="imgFigure">
+                    <img src="img/blog1.png" alt="blog 2" class="blogImg">
+                    <div class="blogOverlay">
+                        <span><i class="fa-regular fa-user"></i> Ruben Reed</span>
+                        <span><i class="fa-regular fa-clock"></i> 01st July 2021</span>
+                    </div> 
                 </figure>
+                <article>
+                    <h4>New exhibition at our Museum</h4>
+                    <p>Even the all-powerful Pointing has no control about the blind almost unorthographic.</p>
+                    <a href="#">Read More</a>
+                </article>
             </div>
-            <div>
-                <figure>
-                    <img src="img/blog3.png" alt="blog 3">
-                    <article>
-                        <h4>Design your apps in your own way</h4>
-                        <p>Pityful a rethoric question ran over her cheek, then she continued hey way.</p>
-                        <a href="#">Read More</a>
-                    </article>
+            <div class="blogCard">
+                <figure class="imgFigure">
+                    <img src="img/blog2.png" alt="blog 3" class="blogImg">
+                    <div class="blogOverlay">
+                        <span><i class="fa-regular fa-user"></i> Theresa Sinclair</span>
+                        <span><i class="fa-regular fa-clock"></i> 25th July 2021</span>
+                    </div> 
                 </figure>
+                <article>
+                    <h4>Design your apps in your own way</h4>
+                    <p>Pityful a rethoric question ran over her cheek, then she continued hey way.</p>
+                    <a href="#">Read More</a>
+                </article>
             </div>
         </div>
     </section>
     <footer>
-        <div>
-            <div>
-                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
+        <div class="footerContainer">
+            <div class="socialsContainer">
+                <div class="iconContainer">
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="iconContainer">
+                    <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="iconContainer">
+                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="iconContainer">
+                    <a href="#" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
             </div>
-            <div>
+            <div class="tosContainer">
                 <a href="#">Terms & Condition</a>
+                <span>|</span>
                 <a href="#">Privacy Policy</a>
-                <a href="#">Contact Us</a>
+                <span>|</span>
+                <a href="#scrollTop">Contact Us</a>
             </div>
             <p>2022 © Kucra - Landing Page</p>
         </div>
+        <a href="#scrollTop" class="scrollButton"><i class="fa-solid fa-arrow-up"></i></a>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
