@@ -2,6 +2,7 @@
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
 
 }
@@ -24,6 +25,12 @@ header {
     text-decoration: none;
     font-size: xx-large;
     color: white;
+}
+.iconBurger {
+    display: none;
+}
+.iconColor {
+    display: none;
 }
 nav {
     padding: 0em 3em;
@@ -209,6 +216,9 @@ input[type="text"]:focus {
     max-width: 1000px;
     position: relative;
     margin: auto;
+}
+.imgcarou {
+    width: 70%;
 }
 .slides {
     display: none;
@@ -712,3 +722,327 @@ padding: 2em;
     font-size: 24px;
 }
 
+@media screen and (max-width: 640px) {
+    header, #productSection, .workSection, .teamSection, .paralaxSection, #clientSection, .creativeSection, #pricingSection, #blogSection, footer{
+        width: 100%;
+    }
+    #navParent {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    #navTitle {
+        padding: 0.5em 1em;
+    }
+    .iconBurger {
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        border-radius: 50%;
+        font-size: 24px;
+        color: white;
+    }
+    .iconBurger > i {
+        margin: auto;
+    }
+    #links {
+        border-radius: 10px;
+        text-align: center;
+        position: absolute;
+        display: none;
+        padding: 0;
+        left: 10%;
+        top: 60px;
+        width: 80%;
+        flex-direction: column;
+        background-color: #193961dc;
+    }
+    .navButton {
+        line-height: 2em;
+    }
+    .iconColor {
+        display: flex;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        border-radius: 50%;
+        font-size: 24px;
+        color: white;
+    }
+    #logoList {
+        display: none;
+    }
+    #bottomHeader {
+        margin: 0 auto;
+        text-align: center;
+        flex-direction: column;
+    }
+    #figureIllu {
+        margin: 3em auto;
+        width: 80%;
+    }
+    #bottomHeaderContent {
+        text-align: left;
+        width: 100%;
+    }
+    #bottomHeaderContent > h1 {
+        width: 100%;
+    }
+    #bottomHeaderContent > p {
+        width: 100%;
+    }
+    .teamCardContainer {
+        padding: 0;
+        flex-direction: column;
+    }
+    .spanText {
+        padding-bottom: 1em;
+    }
+    .figTitle {
+        padding-top: 1em;
+    }
+    .person1Container {
+        width: 100%;
+    }
+    .teamCard {
+        width: 40%;
+        margin: 3em 0;
+    }
+    form {
+        width: auto;
+        margin: 0;
+    }
+    .imgcarou {
+        width: 100%;
+    }
+    #leftArrow {
+        left: 50px
+    }
+    #rightArrow {
+        right: 50px;
+    }
+    .imgContainer {
+        align-items: center;
+        flex-direction: column;
+    }
+    .creativeContainer {
+        width: auto;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .creativeContent {
+        width: auto;
+        justify-content: center;
+    }
+    .creativeContent > h3 {
+        padding-top: 1em;
+        padding-left: 1em;
+    }
+    .creativeContent > p {
+        padding-left: 1em;
+    }
+    .creativeImg {
+        width: 100%;
+    }
+    .clientImage {
+        width: 40%;
+    }
+    .learnButton {
+        margin: 1em;
+    }
+    .statsContainer {
+        padding-left: 1em;
+    }
+    .priceCardContainer {
+        flex-direction: column;
+    }
+    .titleContent > p {
+        width: 90%;
+        color: gray;
+        margin: 0 auto;
+
+    }
+    #blogSection > p {
+        width: 90%;
+        color: gray;
+        padding: 0;
+        margin: 3em auto;
+
+    }
+    .blogContainer {
+        flex-direction: column;
+    }
+    .blogCard {
+        margin: 0 auto;
+        margin-bottom: 2em;
+        width: 90%;
+    }
+    .socialsContainer {
+        padding: 0;
+        margin: 2em auto;
+    }
+    .tosContainer {
+        padding: 0;
+        justify-content: center;
+    }
+    .tosContainer > span {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    header, #productSection, .workSection, .teamSection, .paralaxSection, #clientSection, .creativeSection, #pricingSection, #blogSection, footer{
+        width: 100%;
+    }
+    #navParent {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    #navTitle {
+        padding: 0.5em 1em;
+    }
+    .iconBurger {
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        border-radius: 50%;
+        font-size: 24px;
+        color: white;
+    }
+    .iconBurger > i {
+        margin: auto;
+    }
+    #links {
+        border-radius: 10px;
+        text-align: center;
+        position: absolute;
+        display: none;
+        padding: 0;
+        left: 10%;
+        top: 60px;
+        width: 80%;
+        flex-direction: column;
+        background-color: #193961dc;
+    }
+    .navButton {
+        padding: 0.5em 0;
+        font-size: 24px;
+        line-height: 2em;
+    }
+    #logoList {
+        margin: auto 0;
+        padding: 0.5em 1em;
+        width: 40%;
+    }
+    #bottomHeader {
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+    }
+    #figureIllu {
+        margin: 3em auto;
+        width: 80%;
+    }
+    #bottomHeaderContent {
+        justify-content: center;
+        width: 100%;
+    }
+    #bottomHeaderContent > h1 {
+
+        width: 100%;
+    }
+    #bottomHeaderContent > p {
+        width: 100%;
+    }
+    .teamCardContainer {
+        padding: 0;
+        flex-direction: column;
+    }
+    .person1Container {
+        width: 100%;
+    }
+    .teamCard {
+        margin: 3em 0;
+    }
+    form {
+        width: auto;
+        margin: 0;
+    }
+    .imgcarou {
+        width: 100%;
+    }
+    #leftArrow {
+        left: 50px
+    }
+    #rightArrow {
+        right: 50px;
+    }
+    .imgContainer {
+        align-items: center;
+        flex-direction: column;
+    }
+    .creativeContainer {
+        padding: 0;
+    }
+    .creativeImgContainer {
+        display: flex;
+    }
+    .creativeContent > h3 {
+        padding-top: 1em;
+    }
+    .creativeImg {
+    margin: auto;
+    }
+    .clientImage {
+        width: 40%;
+    }
+    .learnButton {
+        margin: 2em 0;
+    }
+    .priceCardContainer {
+        flex-direction: column;
+    }
+    .priceCard {
+        width: 450px;
+        height: 600px;
+    }
+    .list {
+        margin-bottom: 4.5em;
+    }
+    .titleContent > p {
+        width: 90%;
+        color: gray;
+        margin: 0 auto;
+
+    }
+    #blogSection > p {
+        width: 90%;
+        color: gray;
+        padding: 0;
+        margin: 3em auto;
+
+    }
+    .blogContainer {
+        flex-direction: column;
+    }
+    .blogCard {
+        margin: 0 auto;
+        margin-bottom: 2em;
+        width: 90%;
+    }
+    .socialsContainer {
+        padding: 0;
+        margin: 2em auto;
+    }
+    .tosContainer {
+        padding: 0;
+        justify-content: center;
+    }
+    footer {
+        min-height: 30vh;
+    }
+}

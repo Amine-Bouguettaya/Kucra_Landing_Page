@@ -11,8 +11,9 @@
 <body>
     <header id="scrollTop">
         <div id="navParent">
+            <a href="javascript:void(0);" class="iconBurger" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             <a href="" id="navTitle">Kucra</a>
-            <nav>
+            <nav id="links">
                 <a href="" class="navButton">HOME</a>
                 <a href="#productSection" class="navButton">FEATURES</a>
                 <a href="#clientSection" class="navButton">CLIENT</a>
@@ -22,6 +23,7 @@
                 <a href="#blogSection" class="navButton">BLOG</a>
                 <a href="" class="navButton">CONTACT</a>
             </nav>
+            <a href="javascript:void(0);" class="iconColor" onclick="backgroundColorChange()"><i class="fa-regular fa-eye"></i></a>
             <div id="logoList">
                 <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
@@ -218,7 +220,7 @@
             <div class="priceCardContainer">
                 <div class="priceCard">
                     <h4>Starter</h4>
-                    <span><span>$9</span>/month</span>
+                    <span><span class="valueCard">$9</span>/month</span>
                     <ul class="list">
                         <li class="itemList">
                             <span class="itemName"><i class="fa-regular fa-circle-check"></i>Bandwith</span>
@@ -248,7 +250,7 @@
                         <span>20%<br>sale</span>
                     </div>
                     <h4>Advenced</h4>
-                    <span><span>$19</span>/month</span>
+                    <span><span class="valueCard">$19</span>/month</span>
                     <ul class="list">
                         <li class="itemList">
                             <span class="itemName"><i class="fa-regular fa-circle-check"></i>Bandwith</span>
@@ -275,7 +277,7 @@
                 </div>
                 <div class="priceCard">
                     <h4>Professional</h4>
-                    <span><span>$29</span>/month</span>
+                    <span><span class="valueCard">$29</span>/month</span>
                     <ul class="list">
                         <li class="itemList">
                             <span class="itemName"><i class="fa-regular fa-circle-check"></i>Bandwith</span>
@@ -375,7 +377,7 @@
             </div>
             <p>2022 © Kucra - Landing Page</p>
         </div>
-        <a href="#scrollTop" class="scrollButton"><i class="fa-solid fa-arrow-up"></i></a>
+        <!-- <a href="#scrollTop" class="scrollButton"><i class="fa-solid fa-arrow-up"></i></a> -->
     </footer>
     <script src="main.js"></script>
 </body>
