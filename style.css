@@ -30,7 +30,15 @@ header {
     display: none;
 }
 .iconColor {
-    display: none;
+    margin: auto;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
 }
 nav {
     padding: 0em 3em;
@@ -518,12 +526,12 @@ input[type="text"]:focus {
     height: 500px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
-.titleContainer {
+#titleContainer {
     position: relative;
     right: 0;
     width: 100%;
 }
-.titleContainer > span{
+#titleContainer > span{
     padding: 0.5em;
     color: white;
     border-radius: 0 10px;
@@ -535,7 +543,7 @@ input[type="text"]:focus {
     font-size: 36px;
     color: #608cfc;
 }
-.priceCard > .titleContainer > h4 {
+.priceCard > #titleContainer > h4 {
     padding: 1em 0;
     font-weight: bold;
 }
